@@ -23,7 +23,7 @@ func Interpret(sourceCode []int32, input []int32) error {
 		case "<":
 			p--
 		case ".":
-			fmt.Println(string(cache[p]))
+			fmt.Print(string(cache[p]))
 		case ",":
 			cache[p] = input[0]
 			input = input[1:]
